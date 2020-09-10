@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop_up"
+    android:layout_width="320dp"
+    android:layout_height="370dp"
+    android:layout_gravity="center"
+    android:background="@drawable/pop_up_lists_window"
+    tools:context=".Actions_Lists">
+
+
+    <TextView
+        android:id="@+id/btn_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="X"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <TextView
+        android:id="@+id/Actions_Lists_pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIONS LISTS"
+        android:textColor="@color/White"
+        android:textStyle="bold|italic"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_list_clients"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/list_button_background"
+        android:foregroundGravity="center"
+        android:text="Clients List"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Actions_Lists_pop_up"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <Button
+        android:id="@+id/btn_list_commandes"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/list_button_background"
+        android:foregroundGravity="center"
+        android:text="Orders List"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_list_clients"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <Button
+        android:id="@+id/btn_list_articles"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/list_button_background"
+        android:foregroundGravity="center"
+        android:text="Articles List"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_list_commandes"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <Button
+          android:id="@+id/btn_list_users"
+          android:layout_width="280dp"
+          android:layout_height="50dp"
+          android:background="@drawable/list_button_background"
+          android:foregroundGravity="center"
+          android:text="USERS List"
+          android:textSize="20dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/btn_list_articles"
+          app:layout_constraintVertical_bias="0.22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

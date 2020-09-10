@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="470dp"
+    android:layout_gravity="center"
+    tools:context=".Edit_Client"
+    android:background="@drawable/pop_up__are_window">
+
+    <TextView
+        android:id="@+id/edit_client_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Edit Client"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="38sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/edit_client_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_client_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_client_id"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:hint="ID"
+                android:textColor="#000"
+                android:textColorHint="#555555"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/edit_client_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="#555555" />
+
+            <EditText
+                android:id="@+id/edit_client_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Contact Name"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="#555555" />
+
+            <EditText
+                android:id="@+id/edit_client_code"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Code"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHint="#555555"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/edit_client_adr"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:textColor="#000"
+                android:textColorHint="#555555" />
+
+            <EditText
+                android:id="@+id/edit_client_code_tva"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Code TVA"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHint="#555555"
+                android:maxLength="2"/>
+
+            <EditText
+                android:id="@+id/edit_client_description"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Description"
+                android:gravity="top"
+                android:inputType="textLongMessage"
+                android:maxLength="3000"
+                android:textColor="#000"
+                android:textColorHint="#555555" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_edit_client"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_button_background"
+        android:text="Edit Client"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_client_scrollView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

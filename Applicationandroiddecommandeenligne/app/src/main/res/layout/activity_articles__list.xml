@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Articles_List">
+
+    <TextView
+        android:id="@+id/articles_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="ARTICLES LIST"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="35dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_add_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_button_background"
+        android:layout_marginTop="28dp"
+        android:text="ADD"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_remove_article"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Articles_recyclerView" />
+
+    <Button
+        android:id="@+id/btn_edit_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/list_button_background"
+        android:text="EDIT"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_remove_article"
+        app:layout_constraintTop_toBottomOf="@+id/Articles_recyclerView" />
+
+    <Button
+        android:id="@+id/btn_remove_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/list_button_background"
+        android:text="REMOVE"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Articles_recyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Articles_recyclerView"
+        android:layout_width="358dp"
+        android:layout_height="402dp"
+        android:layout_marginTop="30dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articles_list_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

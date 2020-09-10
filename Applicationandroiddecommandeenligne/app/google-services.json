@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "433350454970",
+    "firebase_url": "https://commandeapp.firebaseio.com",
+    "project_id": "commandeapp",
+    "storage_bucket": "commandeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433350454970:android:8f45263600d4a4345c9c83",
+        "android_client_info": {
+          "package_name": "com.example.applicationandroiddecommandeenligne"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433350454970-28c3cc999jvhj5ad45upf7k4stt4rnb7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.applicationandroiddecommandeenligne",
+            "certificate_hash": "7e42e53e821919de34554946f1e15a6d939cc7b9"
+          }
+        },
+        {
+          "client_id": "433350454970-58kvmqqvaj12a1d2oisco236gturm4dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNI8ZOKypWrom75veaVr42Xy8gdShnzBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433350454970-58kvmqqvaj12a1d2oisco236gturm4dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
